@@ -14,3 +14,12 @@ console.log(obj['age'])
 obj.name='hhh'
 //删除属性
 delete obj.name
+
+var str = 'ds'
+obj[str] = 'sadf'  
+console.log(obj)
+
+// symbol对象
+var key = Symbol('key')
+obj[key] = 'this is symbol'
+console.log(obj[key])
