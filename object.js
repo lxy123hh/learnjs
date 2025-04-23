@@ -7,4 +7,10 @@ var obj = {
  }
  //增加属性
  obj.sex='n'
+ //读取属性
 console.log(obj.name)
+console.log(obj['age'])
+//设置属性
+obj.name='hhh'
+//删除属性
+delete obj.name
