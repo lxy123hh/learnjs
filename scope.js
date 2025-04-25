@@ -11,9 +11,11 @@ function fn() {
 // 3.块级作用域，用const和let声明
 {
     let c = 1
+    const e = 3
     {
         let d = 2
     }
     // console.log(d)
     console.log(c)
+    console.log(e)
 }
