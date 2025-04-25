@@ -14,5 +14,6 @@ function fn() {
     {
         let d = 2
     }
-    console.log(d)
+    // console.log(d)
+    console.log(c)
 }
