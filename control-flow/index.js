@@ -1,8 +1,8 @@
 const myname = "lxy";
-if (myname == 'lxy') {
+if (myname === 'lxy') {
     console.log("yes");
 }
-else if(myname == 'hhh') {
+else if(myname ==='hhh') {
     console.log("no")
 }
 else {
