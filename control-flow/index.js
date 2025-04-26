@@ -1,4 +1,6 @@
-const myname = "lxy";
+// 不等于!==
+// 与&& 或 ||
+const myname = "lx";
 if (myname === 'lxy') {
     console.log("yes");
 }
@@ -7,4 +9,11 @@ else if(myname ==='hhh') {
 }
 else {
     console.log("shayebushi")
+}
+
+
+switch(myname) {
+    case 'lxy':{   console.log("yes");break;}
+    case 'hhh': { console.log("no");break;}
+    default: {  console.log("shayebushi")}
 }
