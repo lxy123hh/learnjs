@@ -34,3 +34,11 @@ const newarr1 = arr1.map(function(item) {
 })
 console.log(newarr1); 
 console.log(arr1); //原数组不变
+
+
+//3. Arry.isArray()方法
+//4.every()方法
+const result = arr.every(function (item) {
+    return item > 0; //判断数组中的每个元素是否都大于0
+})
+console.log(result); //true
