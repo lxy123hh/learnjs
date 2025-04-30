@@ -76,3 +76,26 @@ console.log(result5); //[1, 2, 3, 4, 5, 6]
 const arr5 = [1, 2, 3, 4, 5];
 const result6 = arr5.join('-'); //用-分隔
 console.log(result6); //1-2-3-4-5
+
+// 10. sort()方法,对数组进行排序，默认按字典序排序
+const arr6 = [3, 1, 4, 2, 10, 5];
+//const result7 = arr6.sort(); //按字典序排序
+const result7 = arr6.sort(function (a, b) {
+    return a - b; //按数字大小排序
+})
+console.log(result7); //[1, 2, 3, 4, 5, 10]
+
+//11.slice()方法,返回一个新数组，包含指定范围的元素
+const arr7 = [1, 2, 3, 4, 5];
+const result8 = arr7.slice(1, 4); //返回索引1到索引4的元素，不包括索引4
+console.log(result8); //[2, 3, 4]
+
+//12.删除元素splice()方法,返回一个新数组，包含指定范围的元素
+const arr8 = [1, 2, 3, 4, 5];
+const result9 = arr8.splice(1, 2); //删除索引1到索引2的元素，返回删除的元素
+console.log(result9); //[2, 3]
+console.log(arr8); //[1, 4, 5] //原数组被修改了
+// 13.添加元素splice()方法,返回一个新数组，包含指定范围的元素
+const arr9 = [1, 2, 3, 4, 5];
+const result10 = arr9.splice(1, 0, 6); //在索引1的位置插入6，删除0个元素，返回删除的元素
+console.log(result10); //[]
