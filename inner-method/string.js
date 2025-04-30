@@ -26,9 +26,30 @@ const msg = 'hello';
 const result3 = str1.replace('23', '99') //替换字符串中的23为99
 console.log(result3) //1994
 
-//8.slice()方法,截取字符串中的某个部分
+//8.slice()方法,截取字符串中的某个部分,返回一个新字符串
 const result4 = str1.slice(1, 3) //截取字符串中的第1到第3个字符
 console.log(result4) //23
+
+//9.split()方法,把字符串分割成数组
+const str4 = 'sad alsdkg aldksg cnv adlg '
+const result5 = str4.split(' ') //把字符串分割成数组，分隔符为2
+console.log(result5)//['sad', 'alsdkg', 'aldksg', 'cnv', 'adlg', '']
+
+//10.substring ()方法,截取字符串中的某个部分,返回一个新字符串
+const result6 = str1.substring(1, 3) //截取字符串中的第1到第3个字符
+console.log(result6) //23
+
+ //11.toLowerCase()方法,把字符串转换为小写字母
+const result7 = str1.toLowerCase() //把字符串转换为小写字母
+console.log(result7) //1234
+//12.toUpperCase()方法,把字符串转换为大写字母
+const result8 = str1.toUpperCase() //把字符串转换为大写字母
+console.log(result8) //1234
+//13.trim()方法,去掉字符串两端的空格
+const str5 = '   1234   '
+const result9 = str5.trim() //去掉字符串两端的空格
+console.log(result9) //1234
+
 
 
 
