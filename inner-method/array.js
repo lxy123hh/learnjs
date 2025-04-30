@@ -59,3 +59,15 @@ console.log(result2); //3
 //7.includes()方法,判断数组中是否包含某个元素，返回true或false
 const result3 = arr.includes(3); //判断数组中是否包含3
 console.log(result3); //true
+
+//8.filter()方法,返回一个新数组，包含所有符合条件的元素
+const arr3 = [{name:'1', isVip: true}, {name:'2', isVip: false}, {name:'3', isVip: true}]
+const result4 = arr3.filter(function (item) {
+    return item.isVip; //返回所有isVip为true的元素
+})
+console.log(result4); //[{name:'1', isVip: true}, {name:'3', isVip: true}]
+
+//9.数据扁平化
+const arr4 = [1, 2, [3, 4], [5, 6]];
+const result5 = arr4.flat(1); //扁平化一层
+console.log(result5); //[1, 2, 3, 4, 5, 6]
