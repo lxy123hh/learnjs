@@ -25,3 +25,10 @@ Object.freeze(obj); // 冻结对象
 obj.name = 'Jerry'; // 尝试修改属性值
 // console.log(obj.name); // Tom，属性值没有被修改
 // obj.age = 18; // 尝试添加新属性
+
+//4.keys 方法,返回对象的所有属性名
+const result2 = Object.keys(target) //返回对象的所有属性名，返回一个数组
+console.log(result2) //['name', 'age']
+//5.values 方法,返回对象的所有属性值
+const result3 = Object.values(target) //返回对象的所有属性值，返回一个数组
+console.log(result3) //[ 3, 4 ]
