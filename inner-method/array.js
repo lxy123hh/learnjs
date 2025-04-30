@@ -16,21 +16,21 @@ test.name = 2;
 
 
 
-arr1.forEach(function(item) {
-    //如果原数组中的item是引用类型，直接修改item的属性值会影响原数组中的item
-    //如果原数组中的item是基本类型，直接修改item的属性值不会影响原数组中的item
-    //一般情况下不这么做
-    item.name = item.name + 1;
-    console.log(item.name);
-})
-console.log(arr1); 
+// arr1.forEach(function(item) {
+//     //如果原数组中的item是引用类型，直接修改item的属性值会影响原数组中的item
+//     //如果原数组中的item是基本类型，直接修改item的属性值不会影响原数组中的item
+//     //一般情况下不这么做
+//     item.name = item.name + 1;
+//     console.log(item.name);
+// })
+// console.log(arr1); 
 
 
 
 //2.数组的map方法
 const newarr1 = arr1.map(function(item) {
     console.log(item)
-    return {name:'lxy'}
+    return {name:item.name + 1}; //返回一个新对象，原数组不变
 })
 console.log(newarr1); 
 console.log(arr1); //原数组不变
