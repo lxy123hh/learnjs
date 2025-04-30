@@ -71,3 +71,8 @@ console.log(result4); //[{name:'1', isVip: true}, {name:'3', isVip: true}]
 const arr4 = [1, 2, [3, 4], [5, 6]];
 const result5 = arr4.flat(1); //扁平化一层
 console.log(result5); //[1, 2, 3, 4, 5, 6]
+
+//10. join()方法,将数组转换为字符串，默认用逗号分隔
+const arr5 = [1, 2, 3, 4, 5];
+const result6 = arr5.join('-'); //用-分隔
+console.log(result6); //1-2-3-4-5
