@@ -42,3 +42,9 @@ const result = arr.every(function (item) {
     return item > 0; //判断数组中的每个元素是否都大于0
 })
 console.log(result); //true
+
+//5.find()方法
+const result1 = arr.find(function (item) {
+    return item > 3; //返回第一个大于3的元素
+})
+console.log(result1); //4
