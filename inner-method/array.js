@@ -43,8 +43,19 @@ const result = arr.every(function (item) {
 })
 console.log(result); //true
 
-//5.find()方法
+//5.find()方法,找到第一个符合条件的元素，没找到返回undefined
+
 const result1 = arr.find(function (item) {
     return item > 3; //返回第一个大于3的元素
 })
 console.log(result1); //4
+
+//6.findIndex()方法,找到第一个符合条件的元素的索引，没找到返回-1
+const result2 = arr.findIndex(function (item) {
+    return item > 3; //返回第一个大于3的元素的索引
+})
+console.log(result2); //3 
+
+//7.includes()方法,判断数组中是否包含某个元素，返回true或false
+const result3 = arr.includes(3); //判断数组中是否包含3
+console.log(result3); //true
