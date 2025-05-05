@@ -36,6 +36,7 @@ function doSomething(callback) {
     });
   });
 
+  
   //每次请求数据有依赖关系
 wx.request({
   url: 'https://api.example.com/data1',
